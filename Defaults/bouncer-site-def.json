@@ -1,13 +1,7 @@
 [
 	{
-		"$schema": "https://github.com/ChatZilla-Replacement-Project/JSON-Schemas/raw/main/bouncer-site-def.schema.json",
-		"productVersion": "0.0.1",
-		"entries": [
-			{
-				"name": "Bnc4Free",
-				"homepage": "bnc4free.org",
-				"module": "bnc4free"
-			}
-		]
+		"name": "Bnc4Free",
+		"homepage": "bnc4free.org",
+		"module": "bnc4free"
 	}
 ]
