@@ -6,7 +6,7 @@
 		"productVersion": {
 			"type": "string",
 			"pattern": "^\\d+(\\.\\d+)*( +[bB]uild\\d)$",
-		}
+		},
 		"entries": {
 			"type": "array",
 			"items": {
