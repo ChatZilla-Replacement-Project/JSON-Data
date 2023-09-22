@@ -22,15 +22,6 @@
 				"type": "string",
 				"pattern": "^[\\d-_a-z]+$"
 			}
-		},
-		"hasNickServ": {
-			"type": "boolean"
-		},
-		"hasChanServ": {
-			"type": "boolean"
-		},
-		"hasALIS": {
-			"type": "boolean"
 		}
 	}
 }
