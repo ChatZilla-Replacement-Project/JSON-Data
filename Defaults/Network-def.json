@@ -8,8 +8,6 @@
 				"enable": true
 			}
 		],
-		"module": "libera",
-		"hide": false,
-		"autoconnect": false
+		"module": "libera"
 	}
 ]
