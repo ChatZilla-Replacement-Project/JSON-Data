@@ -1,0 +1,45 @@
+{
+	"$id": "https://github.com/ChatZilla-Replacement-Project/JSON-Schemas/raw/main/bouncer-site-def.schema.json",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"type": "object",
+	"properties": {
+		"productVersion": {
+			"type": "string",
+			"pattern": "^\\d+(\\.\\d+)*( +[bB]uild\\d)$"
+		},
+		"entries": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"name": {
+						"type": "string",
+						"description": "This is the name the user sees"
+					},
+					"homepage": {
+						"type": "string",
+						"format": "iri",
+						"description": "Used when the user wants to visit the page in their browser"
+					},
+					"blockedNetworks": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"description": "Not all bouncers allow just any network"
+					},
+					"module": {
+						"type": "string",
+						"pattern": "^[\\d\\-_a-z]+$",
+						"description": "Must be the name of a module installed into the user's bouncer directory"
+					}
+				},
+				"required": [
+					"name",
+					"homepage",
+					"module"
+				]
+			}
+		}
+	}
+}

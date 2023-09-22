@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Libera",
+		"homepage": "libera.chat",
+		"servers": [
+			{
+				"url": "irc.libera.chat",
+				"enable": true
+			}
+		],
+		"module": "libera",
+		"hide": false,
+		"autoconnect": false
+	}
+]
