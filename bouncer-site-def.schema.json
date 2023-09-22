@@ -3,6 +3,10 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"type": "object",
 	"properties": {
+		"productVersion": {
+			"type": "string",
+			"pattern": "^\\d+(\\.\\d+)*( +[bB]uild\\d)$",
+		}
 		"entries": {
 			"type": "array",
 			"items": {
