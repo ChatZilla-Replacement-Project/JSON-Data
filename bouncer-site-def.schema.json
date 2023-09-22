@@ -5,7 +5,7 @@
 	"properties": {
 		"productVersion": {
 			"type": "string",
-			"pattern": "^\\d+(\\.\\d+)*( +[bB]uild\\d)$",
+			"pattern": "^\\d+(\\.\\d+)*( +[bB]uild\\d)$"
 		},
 		"entries": {
 			"type": "array",
