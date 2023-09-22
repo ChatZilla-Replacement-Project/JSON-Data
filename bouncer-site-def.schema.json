@@ -1,4 +1,5 @@
 {
+	"$id": "https://github.com/ChatZilla-Replacement-Project/JSON-Schemas/raw/main/bouncer-site-def.schema.json",
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"type": "object",
 	"properties": {
