@@ -31,10 +31,6 @@
 					]
 				}
 			},
-			"module": {
-				"type": "string",
-				"pattern": "^[\\d-_a-z]+$"
-			}
 		},
 		"required": [
 			"name",
