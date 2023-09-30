@@ -2,11 +2,29 @@
 	{
 		"name": "Libera",
 		"homepage": "libera.chat",
-		"servers": [
+		"servers":
+		[
 			{
 				"domain": "irc.libera.chat",
-				"enable": true
+				"Ports":
+				[
+					6665,
+					6666,
+					6667,
+					8000,
+					8001,
+					8002
+				],
+				"SslPorts":
+				[
+					6697,
+					7000,
+					7070
+				]
 			}
 		],
+		"NickServ": "atTheme",
+		"ChanServ": "atTheme",
+		"HasAlis": true
 	}
 ]
