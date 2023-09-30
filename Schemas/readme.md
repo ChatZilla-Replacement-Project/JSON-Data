@@ -1,1 +1,1 @@
-A "lite" schema omits some fields.  Those are intended for use when the instance file will only exist online.  Instance files on the local machine should use a "full" schema.
+The network schemas are mostly identical.  However, the "user" version has some items the "predefined" version doesn't and vice-versa.  The bouncer schema is the only one of its type.
