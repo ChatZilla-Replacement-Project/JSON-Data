@@ -92,11 +92,23 @@
 			},
 			"HasAlis":
 			{
-				"type": "bool"
+				"enum":
+				[
+					true,
+					false,
+					null
+				],
+				"default": null
 			},
 			"HasQ":
 			{
-				"type": "bool"
+				"enum":
+				[
+					true,
+					false,
+					null
+				],
+				"default": null
 			}
 		},
 		"required": [
