@@ -87,11 +87,21 @@
 			},
 			"HasAlis":
 			{
-				"type": "bool"
+				"enum":
+				[
+					true,
+					false,
+					null
+				]
 			},
 			"HasQ":
 			{
-				"type": "bool"
+				"enum":
+				[
+					true,
+					false,
+					null
+				]
 			}
 		},
 		"required":
