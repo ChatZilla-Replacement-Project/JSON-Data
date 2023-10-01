@@ -76,7 +76,8 @@
 					null,
 					"unknown",
 					"atTheme"
-				]
+				],
+				"default":  null
 			},
 			"ChanServ":
 			{
@@ -86,17 +87,16 @@
 					null,
 					"unknown",
 					"atTheme"
-				]
+				],
+				"default":  null
 			},
 			"HasAlis":
 			{
-				"type": "bool",
-				"default":  false
+				"type": "bool"
 			},
 			"HasQ":
 			{
-				"type": "bool",
-				"default":  false
+				"type": "bool"
 			}
 		},
 		"required": [
