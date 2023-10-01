@@ -67,6 +67,36 @@
 						"Domain"
 					]
 				}
+			},
+			"NickServ":
+			{
+				"type": "string",
+				"enum":
+				[
+					null,
+					"unknown",
+					"atTheme"
+				]
+			},
+			"ChanServ":
+			{
+				"type": "string",
+				"enum":
+				[
+					null,
+					"unknown",
+					"atTheme"
+				]
+			},
+			"HasAlis":
+			{
+				"type": "bool",
+				"default":  false
+			},
+			"HasQ":
+			{
+				"type": "bool",
+				"default":  false
 			}
 		},
 		"required": [
