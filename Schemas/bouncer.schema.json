@@ -66,6 +66,11 @@
 				"type": "number",
 				"minimum": 0,
 				"maximum": 65535
+			},
+			"MaxNetworksPerBouncerInstance":
+			{
+				"type": "number",
+				"minimum": 1,
 			}
 		},
 		"required":
