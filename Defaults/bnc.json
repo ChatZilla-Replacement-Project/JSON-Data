@@ -253,6 +253,7 @@
 			"apple.bnc4free.com",
 			"orange.bnc4free.com",
 			"pear.bnc4free.com",
-		]
+		],
+		"MaxNetworksPerBouncerInstance": 3
 	}
 ]
