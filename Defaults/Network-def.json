@@ -2,8 +2,7 @@
 	{
 		"name": "Libera",
 		"homepage": "libera.chat",
-		"servers":
-		[
+		"servers": [
 			{
 				"domain": "irc.libera.chat",
 				"Ports":
