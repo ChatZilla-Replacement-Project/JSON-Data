@@ -23,8 +23,8 @@
 				]
 			}
 		],
-		"NickServ": atTheme,
-		"ChanServ": atTheme,
+		"NickServ": "atTheme",
+		"ChanServ": "atTheme",
 		"HasAlis": true
 	}
 ]
