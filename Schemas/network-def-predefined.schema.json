@@ -104,6 +104,181 @@
 					null
 				],
 				"default": null
+			},
+			"ChanModes":
+			{
+				"type": "array",
+				"items":
+				{
+					"type": "object",
+					"properties":
+					{
+						"Name":
+						{
+							"Type": "string",
+							"maxLength": 1
+						},
+						"LocalizedDesc":
+						{
+							"type": "array",
+							"items":
+							{
+								"type": "object",
+								"properties":
+								{
+									"Lang":
+									{
+										"type": "string",
+										"pattern": "^[a-z][a-z](-[A-Z][A-Z])?$"
+									},
+									"Translation":
+									{
+										"type": "string",
+										"minLength": 1
+									}
+								}
+							},
+							"minLength": 1
+						},
+						"DefaultDesc":
+						{
+							"type": "string",
+							"minLength": 1
+						},
+						"NotAlwaysAvailable":
+						{
+							"type": "boolean"
+						},
+						"Parameters":
+						{
+							"type": "array",
+							"items":
+							{
+								"type": "object",
+								"properties":
+								{
+									"Name":
+									{
+										"type": "string"
+									},
+									"LocalizedDisplayNames":
+									{
+										"type": "array",
+										"items":
+										{
+											"type": "object",
+											"properties":
+											{
+												"Lang":
+												{
+													"type": "string",
+													"pattern": "^[a-z][a-z](-[A-Z][A-Z])?$"
+												},
+												"Translation":
+												{
+													"type": "string",
+													"minLength": 1
+												}
+											}
+										}
+									},
+									"DefaultDisplayName":
+									{
+										"type": "string"
+									},
+									"LocalizedDesc":
+									{
+										"type": "array",
+										"items":
+										{
+											"type": "object",
+											"properties":
+											{
+												"Lang":
+												{
+													"type": "string",
+													"pattern": "^[a-z][a-z](-[A-Z][A-Z])?$"
+												},
+												"Translation":
+												{
+													"type": "string",
+													"minLength": 1
+												}
+											}
+										},
+										"minLength": 1
+									},
+									"DefaultDesc":
+									{
+										"type": "string",
+										"minLength": 1
+									},
+									"Type":
+									{
+										"enum":
+										[
+											"string",
+											"number",
+											"chanName"
+										]
+									},
+									"MinForNumber":
+									{
+										"type": "number"
+									},
+									"MaxForNumber":
+									{
+										"type": "number"
+									},
+									"LocalizedPostFixLabel":
+									{
+										"type": "array",
+										"items":
+										{
+											"type": "object",
+											"properties":
+											{
+												"Lang":
+												{
+													"type": "string",
+													"pattern": "^[a-z][a-z](-[A-Z][A-Z])?$"
+												},
+												"Translation":
+												{
+													"type": "string",
+													"minLength": 1
+												}
+											}
+										},
+										"minLength": 1
+									},
+									"DefaultPostFixLabel":
+									{
+										"type": "string",
+										"minLength": 1
+									},
+									"required":
+									[
+										"Name",
+										"Type",
+										"DefaultDisplayName",
+										"DefaultDesc"
+									]
+								}
+							}
+						},
+						"FormatAsSentToNetwork":
+						{
+							"type": "string"
+						},
+						"required":
+						[
+							"Mode",
+							"DefaultDesc",
+							"FormatAsSentToNetwork"
+						]
+					}
+				}
 			}
 		},
 		"required":
