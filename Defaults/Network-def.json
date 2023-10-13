@@ -1,11 +1,11 @@
 [
 	{
-		"Name": "Libera",
-		"Homepage": "libera.chat",
-		"Servers":
+		"name": "Libera",
+		"homepage": "libera.chat",
+		"servers":
 		[
 			{
-				"Domain": "irc.libera.chat",
+				"domain": "irc.libera.chat",
 				"Ports":
 				[
 					6665,
@@ -25,6 +25,129 @@
 		],
 		"NickServ": "atTheme",
 		"ChanServ": "atTheme",
-		"HasAlis": true
+		"HasAlis": true,
+		"ChanModes":
+		[
+			{
+				"Mode": "n",
+				"DefaultDesc": "This mode prevents messages from being set from outside the channel.  When set, users or bots must be in the channel to post."
+			},
+			{
+				"Mode": "t",
+				"DefaultDesc": "This mode prevents changes to the topic by users who aren't ops or half ops.  Note: Services like ChanServ or Q may prevent such topic changes even if this mode is off."
+			},
+			{
+				"Mode": "s",
+				"DefaultDesc": "If this mode is set, the channel won't be listed in |/whois| or |/list|."
+			},
+			{
+				"Mode": "p",
+				"DefaultDesc": "Private channels disable, |/knock|."
+			},
+			{
+				"Mode": "m",
+				"DefaultDesc": "When this mode is on, only users with op, half-op, or voice may talk in the channel."
+			},
+			{
+				"Mode": "i",
+				"DefaultDesc": "This mode causes the channel to be invite only.  People must get an invite via either the ChanServ/Q's invite function or the |/invite| command."
+			},
+			{
+				"Mode": "r",
+				"DefaultDesc": "This mode, when set, prevents users who aren't registered from joining.  If you set this, be sure to set a forwarding location with 'f'."
+			},
+			{
+				"Mode": "R",
+				"DefaultDesc": "Prevents users who aren't registered from posting.  Unlike the 'r' mode, 'R' allows the user to join, but not post.  The network administrator has to make this available.",
+				"NotAlwaysAvailable": true
+			},
+			{
+				"Mode": "c",
+				"DefaultDesc": "This mode causes colors to be stripped"
+			},
+			{
+				"Mode": "g",
+				"DefaultDesc": "This mode allows anyone to issue an invite.  This weakens +i.  However, remember, anyone with a link or the channel name can join unless the channel is +i or has a key (+k)."
+			},
+			{
+				"Mode": "u",
+				"DefaultDesc": "This mode causes the network to disable filtering of messages for this channel.  Use with care and only if you think messages are being blocked that shouldn't be.   The network administrator has to make this available.",
+				"NotAlwaysAvailable": true
+			},
+			{
+				"Mode": "z",
+				"DefaultDesc": "When this mode is set, all posts from anyone without voice or op privileges are sent to ops instead of the channel as a whole."
+			},
+			{
+				"Mode": "F",
+				"DefaultDesc": "Designates this channel as a “Free Target”.  When set, anyone can set this channel as a forward from their channel with 'f'.  Otherwise, users must be an op here first."
+			},
+			{
+				"Mode": "Q",
+				"DefaultDesc": "When set, this mode prevents all forwarding to this channel except when override by 'F'."
+			},
+			{
+				"Mode": "C",
+				"DefaultDesc": "Prevents use of all CTCP commands except |ACTION|."
+			},
+			{
+				"Mode": "f",
+				"DefaultDesc": "Forwards users who can't join to another channel.  This can be because of +i, +j, +l, or +r.",
+				"Parameters":
+				[
+					{
+						"Name": "Destination",
+						"DefaultDisplayName": "Destination",
+						"DefaultDesc": "Enter the name of the channel you want the forward to go to."
+					}
+				],
+				"FormatAsSentToNetwork": "Destination"
+			},
+			{
+				"Mode": "j",
+				"DefaultDesc": "Used to prevent flooding of new users in a given amount of time.",
+				"Paramters":
+				[
+					{
+						"Name": "Limit",
+						"DefaultDisplayName": "Limit",
+						"DefaultDesc": "Enter the maximum number of allowed users for the time amount."
+					},
+					{
+						"Name": "ResetTime",
+						"DefaultDisplayName": "Reset Time",
+						"DefaultDesc": "Select how long the channel should wait before assuming the join flood has ended.  This is measured in seconds.",
+						"DefaultPostFixLabel": "seconds"
+					}
+				],
+				"FormatAsSentToNetwork": "Limit:ResetTime"
+			},
+			{
+				"Mode": "k",
+				"DefaultDesc": "Setting a key requires anyone who wants to join to enter a key in order to join.",
+				"Parameters":
+				[
+					{
+						"Name": "Key",
+						"DefaultDisplayName": "Key",
+						"DefaultDesc": "Enter the key for this channel"
+					}
+				],
+				"FormatAsSentToNetwork": "Key"
+			},
+			{
+				"Mode": "l",
+				"DefaultDesc": "Imposes a maximum number of people in the channel",
+				"Parameters":
+				[
+					{
+						"Name": "Limit",
+						"DefaultDisplayName": "Limit",
+						"DefaultDesc": "Enter the maximum users in this channel"
+					}
+				],
+				"FormatAsSentToNetwork": "Limit"
+			}
+		]
 	}
 ]
