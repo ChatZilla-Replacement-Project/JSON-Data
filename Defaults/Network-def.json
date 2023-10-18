@@ -42,7 +42,7 @@
 			},
 			{
 				"Mode": "p",
-				"DefaultDesc": "Private channels disable, |/knock|."
+				"DefaultDesc": "Private channels disable |/knock|."
 			},
 			{
 				"Mode": "m",
@@ -91,6 +91,14 @@
 				"DefaultDesc": "Prevents use of all CTCP commands except |ACTION|."
 			},
 			{
+				"Mode": "T",
+				"DefaultDesc": "No notices allowed in channel"
+			},
+			{
+				"Mode": "S",
+				"DefaultDesc": "Only users connected via SSL/TLS may join this channel while this mode is set.  Users already in the channel are unaffected."
+			},
+			{
 				"Mode": "f",
 				"DefaultDesc": "Forwards users who can't join to another channel.  This can be because of +i, +j, +l, or +r.",
 				"Parameters":
@@ -101,7 +109,7 @@
 						"DefaultDesc": "Enter the name of the channel you want the forward to go to."
 					}
 				],
-				"FormatAsSentToNetwork": "Destination"
+				"FormatAsSentToNetwork": "{Destination}"
 			},
 			{
 				"Mode": "j",
@@ -120,7 +128,7 @@
 						"DefaultPostFixLabel": "seconds"
 					}
 				],
-				"FormatAsSentToNetwork": "Limit:ResetTime"
+				"FormatAsSentToNetwork": "{Limit}:{ResetTime}"
 			},
 			{
 				"Mode": "k",
@@ -133,7 +141,7 @@
 						"DefaultDesc": "Enter the key for this channel"
 					}
 				],
-				"FormatAsSentToNetwork": "Key"
+				"FormatAsSentToNetwork": "{Key}"
 			},
 			{
 				"Mode": "l",
@@ -146,7 +154,82 @@
 						"DefaultDesc": "Enter the maximum users in this channel"
 					}
 				],
-				"FormatAsSentToNetwork": "Limit"
+				"FormatAsSentToNetwork": "{Limit}"
+			},
+			{
+				"Mode": "L",
+				"DefaultDesc": "If set, the channel has a large ban list feature enabled for bans, exemption, invitation exemptions, and quiets.  This mode can only be set by IRC operators.",
+				"IsOperRequiredToChange": true
+			},
+			{
+				"Mode": "P",
+				"Default": "This mode marks the channel as “permanent”.  Such channels don't disappear when empty.  This mode can only be set by IRC operators.",
+				"IsOperRequiredToChange": true
+			},
+			{
+				"Mode": "O",
+				"DefaultDesc": "This channel is restricted to IRC operators.  No other users can join.  If you want to join it, use |/oper| first.",
+				"IsOperRequiredToChange": true
+			},
+			{
+				"Mode": "A",
+				"DefaultDesc": "This channel is restricted to administrators of a server on this network.  No other users can join.",
+				"IsOperRequiredToChange": true
+			}
+		],
+		"UserModes":
+		[
+			{
+				"Mode": "o",
+				"DefaultDesc": "Designates the user as a IRC operator.  Use |/oper| to obtain this."
+			},
+			{
+				"Mode": "i",
+				"DefaultDesc": "Designates this client as “invisible”."
+			},
+			{
+				"Mode": "g",
+				"DefaultDesc": "Prevents users not in your |/accept| list from messaging you and inviting you to channels"
+			},
+			{
+				"Mode": "u",
+				"DefaultDesc": "Receive messages that would otherwise be filtered out based on content.  Set this if you think you aren't getting some messages.",
+				"NotAlwaysAvailable": true
+			},
+			{
+				"Mode": "w",
+				"DefaultDesc": "Can see wallops"
+			},
+			{
+				"Mode": "C",
+				"DefaultDesc": "Prevents you from receiving CTCPs other than |ACTION|.",
+				"NotAlwaysAvailable": true
+			},
+			{
+				"Mode": "D",
+				"DefaultDesc": "Causes you to ignore all channel messages.  This is referred to as being “deaf”."
+			},
+			{
+				"Mode": "G",
+				"DefaultDesc": "Prevent users not on your |/accept| list and not in a channel with you from messaging you or inviting you to channels.  This is a softer form of +g."
+			},
+			{
+				"Mode": "I",
+				"DefaultDesc": "Hides your |/whois| idle time and prevents you from seeing the idle time of other users.",
+				"NotAlwaysAvailable": true
+			},
+			{
+				"Mode": "Q",
+				"DefaultDesc": "Prevents you from being affected by channel forwarding."
+			},
+			{
+				"Mode": "R",
+				"DefaultDesc": "Prevents unidentified users that you haven't accepted from messaging you."
+			},
+			{
+				"Mode": "Z",
+				"DefaultDesc": "If set, the user is connected via SSL.  This mode is read-only.",
+				"IsReadOnly": true
 			}
 		]
 	}
