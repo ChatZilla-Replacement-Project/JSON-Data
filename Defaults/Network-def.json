@@ -5,7 +5,7 @@
 		"Servers":
 		[
 			{
-				"domain": "irc.libera.chat",
+				"Domain": "irc.libera.chat",
 				"Ports":
 				[
 					6665,
