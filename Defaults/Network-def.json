@@ -1,8 +1,8 @@
 [
 	{
-		"name": "Libera",
-		"homepage": "libera.chat",
-		"servers":
+		"Name": "Libera",
+		"Homepage": "libera.chat",
+		"Servers":
 		[
 			{
 				"domain": "irc.libera.chat",
