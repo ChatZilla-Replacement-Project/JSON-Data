@@ -114,7 +114,7 @@
 			{
 				"Mode": "j",
 				"DefaultDesc": "Used to prevent flooding of new users in a given amount of time.",
-				"Paramters":
+				"Parameters":
 				[
 					{
 						"Name": "Limit",
