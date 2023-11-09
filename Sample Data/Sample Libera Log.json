@@ -1,0 +1,10 @@
+[
+	{
+		"Type": "info",
+		"DescOfEvent": "Attempting to connect to �libera�.  Use /cancel to abort."
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "Connecting to ircs://libera/ (ircs://irc.libera.chat:6697/)� <a>[Cancel connecting to libera]</a>"
+	}
+]

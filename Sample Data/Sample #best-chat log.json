@@ -1,0 +1,37 @@
+[
+	{
+		"Type": "join",
+		"DescOfEvent": "YOU BestChatUser have joined #best-chat"
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "Conference Mode is enabled for this view; joins, leaves, quits and nickname changes are hidden with only a summary shown.  Click the expander to hide or show those."
+	},
+	{
+		"Type": "topicChanged",
+		"DescOfEvent": "Topic for #best-chat is �Best Chat is a communications client with support for IRC and eventually protocols like Matrix and Discord.  The homepage is https://best-chat.org.�"
+	},
+	{
+		"Type": "topicChanged",
+		"DescOfEvent": "Topic for #best-chat was set by SomeUser!~SomeUser@some-user.com on Thursday, November 9, 2023 9:55:39 AM"
+	},
+	{
+		"Type": "userModeChanged",
+		"DescOfEvent": "Mode ##space +v BestChatUser by ChanServ"
+	},
+	{
+		"Type": "msg",
+		"Sender": "Sender1",
+		"DescOfEvent": "Best Chat is great! :D"
+	},
+	{
+		"Type": "msg",
+		"Sender": "Sender2",
+		"DescOfEvent": "Sure is. :grin:"
+	},
+	{
+		"Type": "action",
+		"Sender": "Sender3",
+		"DescOfEvent": "wants support for Matrix and Discord now."
+	}
+]

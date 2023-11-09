@@ -1,0 +1,38 @@
+[
+	{
+		"Type": "hello",
+		"DescForEvent": "Welcome to Best Chat."
+	},
+	{
+		"Type": "hello",
+		"DescForEvent": "Below is a short selection of information to help you get started using Best Chat"
+	},
+	{
+		"Type": "info",
+		"DescForEvent": "No plugins were loaded as none were found."
+	},
+	{
+		"Type": "hello",
+		"DescForEvent": "Help is available from many places:"
+	}
+	{
+		"Type": "hello",
+		"DescForEvent": "\t-|/commands| lists all the built-in commands in Best Chat. Use |/help <command-name>| to get help on individual commands."
+	},
+	{
+		"Type": "hello",
+		"DescForEvent": "\t-The IRC Help website http://www.irchelp.org/ provides introductory material for new IRC users."
+	},
+	{
+		"Type": "hello",
+		"DescForEvent": "\t-The ChatZilla website https://github.com/ChatZilla-Replacement-Project provides more information about IRC and Best Chat, including the Best Chat FAQ https://github.com/ChatZilla-Replacement-Project/.github/blob/main/profile/README.md, which answers many common questions about using Best Chat."
+	},
+	{
+		"Type": "info",
+		"DescForEvent": "Available networks are [dalnet, efnet, freenode, hispano, ircnet, libera, oftc, quakenet, serenia, slashnet, solidirc, undernet, webbnet]."
+	},
+	{
+		"Type": "info",
+		"DescForEvent": "loaded 70222 IP ranges"
+	}
+]

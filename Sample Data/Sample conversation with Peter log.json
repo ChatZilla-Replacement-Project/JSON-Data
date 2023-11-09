@@ -1,0 +1,31 @@
+[
+	{
+		"Type": "msg",
+		"Sender": "Peter",
+		"DescOfEvent": "Care to talk?"
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "<Peter@users/Peter> �@Peter:matrix.org�"
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "Peter: Member of #best-chat"
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "Peter is attached to molybdenum.libera.chat �Quebec, CA�"
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "Peter is using a secure connection"
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "Peter is logged in as Peter"
+	},
+	{
+		"Type": "info",
+		"DescOfEvent": "End of whois information for Peter"
+	}
+]
