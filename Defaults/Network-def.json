@@ -106,7 +106,8 @@
 					{
 						"Name": "Destination",
 						"DefaultDisplayName": "Destination",
-						"DefaultDesc": "Enter the name of the channel you want the forward to go to."
+						"DefaultDesc": "Enter the name of the channel you want the forward to go to.",
+						"Type": "chanName"
 					}
 				],
 				"FormatAsSentToNetwork": "{Destination}"
@@ -119,13 +120,15 @@
 					{
 						"Name": "Limit",
 						"DefaultDisplayName": "Limit",
-						"DefaultDesc": "Enter the maximum number of allowed users for the time amount."
+						"DefaultDesc": "Enter the maximum number of allowed users for the time amount.",
+						"Type": "number"
 					},
 					{
 						"Name": "ResetTime",
 						"DefaultDisplayName": "Reset Time",
 						"DefaultDesc": "Select how long the channel should wait before assuming the join flood has ended.  This is measured in seconds.",
-						"DefaultPostFixLabel": "seconds"
+						"DefaultPostFixLabel": "seconds",
+						"Type": "number"
 					}
 				],
 				"FormatAsSentToNetwork": "{Limit}:{ResetTime}"
@@ -138,7 +141,8 @@
 					{
 						"Name": "Key",
 						"DefaultDisplayName": "Key",
-						"DefaultDesc": "Enter the key for this channel"
+						"DefaultDesc": "Enter the key for this channel",
+						"Type": "string"
 					}
 				],
 				"FormatAsSentToNetwork": "{Key}"
@@ -151,7 +155,8 @@
 					{
 						"Name": "Limit",
 						"DefaultDisplayName": "Limit",
-						"DefaultDesc": "Enter the maximum users in this channel"
+						"DefaultDesc": "Enter the maximum users in this channel",
+						"Type": "number"
 					}
 				],
 				"FormatAsSentToNetwork": "{Limit}"
