@@ -1,37 +1,44 @@
 [
 	{
-		"Type": "join",
-		"DescOfEvent": "YOU BestChatUser have joined ##space"
+		"Type": "action",
+		"SubType": "selfJoin",
+		"ChannelTheyJoined": "##space"
 	},
 	{
-		"Type": "info",
+		"Type": "notice",
+		"SubType": "info",
 		"DescOfEvent": "Conference Mode is enabled for this view; joins, leaves, quits and nickname changes are hidden with only a summary shown.  Click the expander to hide or show those."
 	},
 	{
-		"Type": "topicChanged",
-		"DescOfEvent": "Topic for ##space is �Space, the Final Frontier | SEP 01 14:26 UTC Tranche 0-2 Falcon 9 | AUG 31 23:52 UTC Starlink (6-13) | SEP 02 06:20 Aditya L1 PSLV-XL | SEP 03 23:20 UTC Starlink (6-12) Falcon 9 | There are 14 humans in space! | Off-topic? ##space-offtopic | No bridge until further notice | Logged by Everyone�"
-	},
-	{
-		"Type": "topicChanged",
-		"DescOfEvent": "Topic for ##space was set by SomeUser!~SomeUser@some-user.com on Thursday, August 31, 2023 9:55:39 AM"
-	},
-	{
-		"Type": "userModeChanged",
-		"DescOfEvent": "Mode ##space +o BestChatUser by ChanServ"
-	},
-	{
-		"Type": "msg",
-		"Sender": "Sender1",
-		"DescOfEvent": "Not sure what's happening. :("
-	},
-	{
-		"Type": "msg",
-		"Sender": "Sender2",
-		"DescOfEvent": "Me either. 9_9"
+		"Type": "action",
+		"SubType": "topicChanged",
+		"ChanName": "##space",
+		"NewTopic": "Space, the Final Frontier | SEP 01 14:26 UTC Tranche 0-2 Falcon 9 | AUG 31 23:52 UTC Starlink (6-13) | SEP 02 06:20 Aditya L1 PSLV-XL | SEP 03 23:20 UTC Starlink (6-12) Falcon 9 | There are 14 humans in space! | Off-topic? ##space-offtopic | No bridge until further notice | Logged by Everyone",
+		"SetBy": "SomeUser!~SomeUser@some-user.com",
+		"SetAt": "2023-11-10T05:47:56.1635469-06:00"
 	},
 	{
 		"Type": "action",
-		"Sender": "Sender3",
-		"DescOfEvent": "thinks you guys worry too much"
+		"SubType": "userOpped",
+		"WhoGotOp": "BestChatUser",
+		"WhoIssuedOp": "ChanServ"
+	},
+	{
+		"Type": "post",
+		"SubType": "say",
+		"NickOfSender": "Sender1",
+		"Msg": "Not sure what's happening. :("
+	},
+	{
+		"Type": "post",
+		"SubType": "say",
+		"NickOfSender": "Sender2",
+		"Msg": "Me either. 9_9"
+	},
+	{
+		"Type": "post",
+		"SubType": "me",
+		"NickOfSender": "Sender3",
+		"Action": "thinks you guys worry too much"
 	}
 ]

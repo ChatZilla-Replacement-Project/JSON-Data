@@ -1,31 +1,13 @@
 [
 	{
-		"Type": "msg",
-		"Sender": "Peter",
-		"DescOfEvent": "Care to talk?"
+		"Type": "post",
+		"SubType": "say",
+		"NickOfSender": "Peter",
+		"Msg": "Care to talk?"
 	},
 	{
-		"Type": "info",
-		"DescOfEvent": "<Peter@users/Peter> �@Peter:matrix.org�"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Peter: Member of #best-chat"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Peter is attached to molybdenum.libera.chat �Quebec, CA�"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Peter is using a secure connection"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Peter is logged in as Peter"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "End of whois information for Peter"
+		"Type": "notice",
+		"SubType": "info",
+		"DescOfEvent": "<Peter@users/Peter> �@Peter:matrix.org�\r\nPeter: Member of #best-chat\r\nPeter is attached to molybdenum.libera.chat �Quebec, CA�\r\nPeter is using a secure connection\r\nPeter is logged in as Peter\r\nEnd of whois information for Peter"
 	}
 ]

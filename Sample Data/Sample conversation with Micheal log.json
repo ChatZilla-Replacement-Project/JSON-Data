@@ -1,31 +1,13 @@
 [
 	{
-		"Type": "msg",
-		"Sender": "Micheal",
-		"DescOfEvent": "Care to talk?"
+		"Type": "post",
+		"SubType": "say",
+		"NickOfSender": "Micheal",
+		"Msg": "Care to talk?"
 	},
 	{
-		"Type": "info",
-		"DescOfEvent": "<micheal@users/micheal> �@Micheal:matrix.org�"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Micheal: Member of #best-chat"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Micheal is attached to molybdenum.libera.chat �Quebec, CA�"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Micheal is using a secure connection"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "Micheal is logged in as someuser"
-	},
-	{
-		"Type": "info",
-		"DescOfEvent": "End of whois information for Micheal"
+		"Type": "notice",
+		"SubType": "info",
+		"DescOfEvent": "<micheal@users/micheal> �@Micheal:matrix.org�\r\nMicheal: Member of #best-chat\r\nMicheal is attached to molybdenum.libera.chat �Quebec, CA�\r\nMicheal is using a secure connection\r\nMicheal is logged in as someuser\r\nEnd of whois information for Micheal"
 	}
 ]
